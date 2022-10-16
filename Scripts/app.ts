@@ -66,7 +66,6 @@
         });
     }
 
-
     function LoadFooter(): void
     {
         $.get("./Views/components/footer.html", function(html_data)
