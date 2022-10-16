@@ -78,7 +78,7 @@ class Contact {
      * @memberof Contact
      */
     toJSON() {
-        return `${this.FullName}, ${this.ContactNumber}, ${this.EmailAddress}, ${this.SubjectLine}, ${this.MessageText}`;
+        return `${this.FullName},${this.ContactNumber},${this.EmailAddress},${this.SubjectLine},${this.MessageText}`;
     }
     /**
      * This method reads data from a comma separated list and assigns it to class Data Members - DESERIALIZE
@@ -87,11 +87,12 @@ class Contact {
      * @memberof Contact
      */
     fromJSON(data) {
-        this.FullName = data.FullName;
-        this.ContactNumber = data.ContactNumber;
-        this.EmailAddress = data.EmailAddress;
-        this.SubjectLine = data.SubjectLine;
-        this.MessageText = data.MessageText;
+        let stringArray = data.split(",");
+        this.FullName = stringArray[0];
+        this.ContactNumber = stringArray[1];
+        this.EmailAddress = stringArray[2];
+        this.SubjectLine = stringArray[3];
+        this.MessageText = stringArray[4];
     }
 }
 //# sourceMappingURL=contact.js.map
