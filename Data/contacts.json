@@ -1,5 +1,8 @@
 {
     "ContactList": [
-        {"FullName": "Sarah Lochhead", "ContactNumber": 7057185451}
+        {"FullName": "Sarah Lochhead", "ContactNumber": "7057185451", "EmailAddress": "test@test.com", "SubjectLine": "looking for a consult", "MessageText": "Hello, I was wondering if we can set up a meeting?"},
+        {"FullName": "Zoe Penny", "ContactNumber": "705-867-5309", "EmailAddress": "test1@test1.com", "SubjectLine": "call me", "MessageText": "Yo! What's up."},
+        {"FullName": "Carly Kins", "ContactNumber": "33056789586", "EmailAddress": "test2@test2.com", "SubjectLine": "need a new website", "MessageText": "I need a new website badly"}
+
     ]
 }
