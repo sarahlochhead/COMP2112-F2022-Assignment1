@@ -1,0 +1,8 @@
+
+
+/* footer styles */
+footer div.social>a {
+    display: flex;
+    padding-left: 4%;
+
+}
