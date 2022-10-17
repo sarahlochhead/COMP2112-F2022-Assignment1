@@ -44,8 +44,6 @@
     /**
      * This function is an adaptation of our LoadHeader function
      * It has been modified to also load the content to the About page
-     * 
-     *
      */
     function LoadContent(): void
     {
