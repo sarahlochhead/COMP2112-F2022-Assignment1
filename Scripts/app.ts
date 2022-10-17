@@ -2,43 +2,27 @@
 // IFFE
 (function()
 {
-    /**
-     * This method saves our data to local storage
-     *
-     * @param {any[]} contactList
-     */
-    function SaveContactListData(contactList: any[]):void
-    {
-        let count = 0;
-        for (const contact of contactList) 
-        {
-            let newContact = new Contact(contact.FullName, contact.ContactNumber, contact.EmailAddress, contact.MessageText);
-            localStorage.setItem(count.toString(), newContact.toJSON());
-            count++;
-            // maybe this is where the action to send the info via email to me goes?
-        }
-    }
 
     /**
-     * This method reads data from local storage and returns a contact array
+     * This function detects a form submission and saves each input's content to local storage. 
      *
-     * @return {*}  {Contact[]}
      */
-    function LoadContactListData(): Contact[]
+    function ContactFormSubmission(): void
     {
-        // create empty Contact Array Container
-        let ContactArray = new Array<Contact>();
-
-        let keys = Object.keys(localStorage);
-        for (let key of keys) 
-        {
-            let newContact = new Contact();
-            newContact.fromJSON(localStorage.getItem(key));    
-            ContactArray.push(newContact); 
-
-        }
-
-        return ContactArray;
+        // when the submit button is clicked do this function
+       $("button[type=submit]").on("click", function( ){
+        // get all the form inputs (used bootstrap class as there are inputs and a textarea element)    
+        let formInputs = $(".form-control");
+            // this is base off the work we did in class setting the contactList to local storage
+            let counter = 0
+            // for each formInput get the value and put it in local storage as a string
+            for (const formInput of formInputs) {
+                let formDetail = $(formInput).val()
+                localStorage.setItem(counter.toString(), formDetail)
+                counter++
+            }
+                       
+       }); 
     }
 
     /**
@@ -89,6 +73,7 @@
         console.log("App Started");
         LoadContent();
         LoadFooter();
+        ContactFormSubmission();
     }
 
     window.addEventListener("load", Start);
