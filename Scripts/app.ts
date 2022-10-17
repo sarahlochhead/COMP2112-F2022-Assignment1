@@ -41,16 +41,27 @@
         return ContactArray;
     }
 
-    function LoadHeader(): void
+    /**
+     * This function is an adaptation of our LoadHeader function
+     * It has been modified to also load the content to the About page
+     * 
+     *
+     */
+    function LoadContent(): void
     {
         $.get("./Views/components/header.html", function(html_data)
         {
             $("header").html(html_data);
+
+            // This is the string variable for the bio 
+            let aboutBio = "Testing this to see if it works"
             
            switch(document.title)
            {
             case "About":
                 $("#aboutPage").addClass("active");
+                // Since we are on the About page please load this too
+                $("p").html(`${aboutBio}`);
                 break;
             case "Projects":
                 $("#projectsPage").addClass("active");
@@ -66,13 +77,6 @@
         });
     }
 
-    function LoadAbout(): void
-    {
-        let aboutTitle = "About"
-        let aboutBio = "Testing this to see if it works"
-        $("#aboutPage h1").html(`${aboutTitle}`);
-        $("#aboutPage p").html(`${aboutBio}`);
-    }
 
     function LoadFooter(): void
     {
@@ -85,11 +89,8 @@
     function Start()
     {
         console.log("App Started");
-
-        LoadHeader();
-        LoadAbout();
+        LoadContent();
         LoadFooter();
-
     }
 
     window.addEventListener("load", Start);
