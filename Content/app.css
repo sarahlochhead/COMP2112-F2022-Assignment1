@@ -58,6 +58,10 @@ header {
     color: #FF430A;
 }
 
+.nav-item a:hover {
+    color: #FF430A;
+}
+
 
 /* Home Page Styles */
 
