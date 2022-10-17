@@ -126,6 +126,27 @@ header {
     margin-bottom: 20px;
 }
 
+/* Services Styles */
+#services section {
+  min-height: 150px
+
+}
+
+#services .fa-code, #services .fa-globe {
+    color: #FF430A;
+}
+
+#services .fa-pen, #services .fa-images {
+    color: #FFA16E;
+}
+
+#services .fa-comments-dollar, #services .fa-hand-holding-heart {
+    color: #EB8375;
+}
+
+#services hr {  
+    color: #FF430A;
+}
 
 /* Footer Styles */
 footer {
