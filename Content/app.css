@@ -108,7 +108,7 @@ header {
     padding: 2%;
 }
 
-#projects section.card {
+#projects div.card {
     border: 4px dashed #FF430A;
     border-radius: 40px;
     background-color: #FFEDDE;
@@ -132,6 +132,7 @@ header {
 /* Services Styles */
 #services {
     padding: 0 2%;
+    justify-content: center;
 }
 
 #services section {
@@ -172,3 +173,11 @@ footer a {
 footer a:hover {
     color: #FF430A ;
 }
+
+
+/* Media Queries */
+@media screen and (max-width: 576px) {
+    #about div {
+        height: auto;
+    }
+  }
