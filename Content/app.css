@@ -87,7 +87,11 @@ header {
     text-align: center;
 }
 
-
+/* About Page Styles */
+#about div {
+    height: 60vh;
+    padding: 0 2%;
+}
 
 
 
