@@ -50,6 +50,12 @@
             }
         });
     }
+    function LoadAbout() {
+        let aboutTitle = "About";
+        let aboutBio = "Testing this to see if it works";
+        $("#aboutPage h1").html(`${aboutTitle}`);
+        $("#aboutPage p").html(`${aboutBio}`);
+    }
     function LoadFooter() {
         $.get("./Views/components/footer.html", function (html_data) {
             $("footer").html(html_data);
@@ -58,6 +64,7 @@
     function Start() {
         console.log("App Started");
         LoadHeader();
+        LoadAbout();
         LoadFooter();
     }
     window.addEventListener("load", Start);

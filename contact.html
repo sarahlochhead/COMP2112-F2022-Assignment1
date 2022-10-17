@@ -14,7 +14,35 @@
         <header></header>
         <!-- Main Content -->
         <main class="container-fluid">
-          <h1>Contact</h1>
+          <div>
+            <h1>Contact</h1>
+            <p>Text about yeah let's connect</p>
+          </div>
+          <form method="post">
+            <div class="mb-3 col-4">
+              <label for="fullName" class="form-label">Full Name</label>
+              <input type="text" class="form-control" id="fullName" placeholder="Enter your full name">
+            </div>
+            <div class="mb-3 col-4">
+              <label for="emailAddress" class="form-label">Email Address</label>
+              <input type="email" class="form-control" id="emailAddress" placeholder="Enter your email address">
+            </div>
+            <div class="mb-3 col-4">
+              <label for="contactNumber" class="form-label">Contact Number</label>
+              <input type="tel" class="form-control" id="contactNumber" placeholder="555-555-5555">
+            </div>
+            <div class="mb-3 col-6">
+              <label for="subjectLine" class="form-label">Subject Line</label>
+              <input type="text" class="form-control" id="subjectLine" placeholder="What would you like to connect about?">
+            </div>
+            <div class="mb-3 col-6">
+              <label for="messageText" class="form-label">Message</label>
+              <textarea class="form-control" id="messageText" rows="10"></textarea>
+            </div>
+            <div class="col-12">
+              <button type="submit" class="btn btn-primary">Send</button>
+            </div>
+          </form>
         </main>
         <!-- Main Footer -->
         <footer></footer>

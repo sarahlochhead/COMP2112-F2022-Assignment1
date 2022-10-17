@@ -66,6 +66,14 @@
         });
     }
 
+    function LoadAbout(): void
+    {
+        let aboutTitle = "About"
+        let aboutBio = "Testing this to see if it works"
+        $("#aboutPage h1").html(`${aboutTitle}`);
+        $("#aboutPage p").html(`${aboutBio}`);
+    }
+
     function LoadFooter(): void
     {
         $.get("./Views/components/footer.html", function(html_data)
@@ -79,6 +87,7 @@
         console.log("App Started");
 
         LoadHeader();
+        LoadAbout();
         LoadFooter();
 
     }
