@@ -1,3 +1,10 @@
+/**
+* File Name: app.ts
+* Author's Name: Sarah Lochhead
+* Website Name: Sarah lochhead - Web Developer
+* File Description: All the functions for this project reside in this file
+*/
+
 "use strict";
 // IFFE
 (function()
