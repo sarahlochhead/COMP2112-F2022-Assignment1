@@ -96,10 +96,6 @@ header {
 }
 
 /* Project Page Styles */
-#projects {
-    padding-right: 0 2% ;
-}
-
 #projects div.row {
     background-color: rgba(235, 131, 117, 0.75);
     padding: 2%;
@@ -127,9 +123,12 @@ header {
 }
 
 /* Services Styles */
-#services section {
-  min-height: 150px
+#services {
+    padding: 0 2%;
+}
 
+#services section {
+  min-height: 175px;
 }
 
 #services .fa-code, #services .fa-globe {
@@ -146,6 +145,11 @@ header {
 
 #services hr {  
     color: #FF430A;
+}
+
+/* Contact Page Styles */
+#contact {
+    padding: 0 2% 2%;
 }
 
 /* Footer Styles */
