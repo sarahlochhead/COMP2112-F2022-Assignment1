@@ -1,4 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+@import url("https://use.typekit.net/pae4xel.css");
+
+/* General Styles */
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color:  rgba(255, 237, 222, 0.6);
+}
+
+h1, h2 {
+    font-family: bely-display, sans-serif;
+}  
+
+h1 {
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+h2 {
+    padding-bottom: 1%;
+}
+
+
+.btn {
+    background-color: black;
+    color: #FFEDDE;
+    font-weight: 700;
+    padding: 10px
+}
+
+
+.btn:hover {
+    background-color: #FF430A;
+    color:#000000;
+}    
+
+
+/* Header Styles */
+header {
+    background-color: rgba(255, 237, 222, 0.6);
+}
+
+.nav-item a {
+   color: black;
+}
+
+.nav-item a span {
+    color: #FF430A;
+}
+
+
+/* Home Page Styles */
+
+#home {
+    padding-right: 0 2% ;
+    background-image: url('../Assets/bg-paint.jpg'); 
+        background-position: left-top;
+        background-repeat: no-repeat;
+        background-size: 70%  
+}
+
+
+#home div.container {
+    background-color: rgba(235, 131, 117, 0.75);
+    padding: 4%;
+    border-radius: 0 40px 0 0 ;
+}
+
+#home div.headshot img{
+    border-top: solid 30px #FF430A;
+    border-right: solid 60px #FF430A;
+    border-bottom: solid 60px #FF430A;
+    border-left: solid 30px #FF430A;
+    border-radius: 40px;
+    margin-right: 50px;   
+}
+
+#home section {
+    background-color: #FFEDDE;
+    padding: 2%;
+    border: dashed 10px #FFA16E;
+    border-radius: 40px;
+}
+
+#home section h2 {
+    text-align: center;
+}
 
 
 
 
+
+
+
+
+/* Footer Styles */
+footer {
+    background-color: black;
+    color: #FFEDDE;
+}
+
+footer a {
+    color: #EB8375;
+}
+
+footer a:hover {
+    color: #FF430A ;
+}
