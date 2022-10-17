@@ -176,8 +176,21 @@ footer a:hover {
 
 
 /* Media Queries */
+
+@media screen and (max-width: 768px) {
+    
+    footer h5{
+     text-align: center;
+     padding-top: 2%;
+    }
+
+    footer nav > div.container-fluid {
+        justify-content: center!important;
+    }
+}
+
 @media screen and (max-width: 576px) {
     #about div {
         height: auto;
     }
-  }
+}
