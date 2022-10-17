@@ -43,15 +43,13 @@ class Contact {
      * @param {string} [fullName="unknown name"]
      * @param {string} [contactNumber="no contact number"]
      * @param {string} [emailAddress="unknown email address"]
-     * @param {string} [subjectLine="no subject"]
      * @param {string} [messageText="no message"]
      * @memberof Contact
      */
-    constructor(fullName = "unknown name", contactNumber = "no contact number", emailAddress = "unknown email address", subjectLine = "no subject", messageText = "no message") {
+    constructor(fullName = "unknown name", contactNumber = "no contact number", emailAddress = "unknown email address", messageText = "no message") {
         this.FullName = fullName;
         this.ContactNumber = contactNumber;
         this.EmailAddress = emailAddress;
-        this.SubjectLine = subjectLine;
         this.messageText = messageText;
     }
     // public methods
@@ -65,7 +63,6 @@ class Contact {
     toString() {
         let outputString = "";
         outputString += `Message From: ${this.FullName}\n`;
-        outputString += `Subject: ${this.SubjectLine}\n`;
         outputString += `Email Address: ${this.EmailAddress}\n`;
         outputString += `Contact Number: ${this.ContactNumber}\n`;
         outputString += `Message: ${this.MessageText}`;
@@ -78,7 +75,7 @@ class Contact {
      * @memberof Contact
      */
     toJSON() {
-        return `${this.FullName},${this.ContactNumber},${this.EmailAddress},${this.SubjectLine},${this.MessageText}`;
+        return `${this.FullName},${this.ContactNumber},${this.EmailAddress},${this.MessageText}`;
     }
     /**
      * This method reads data from a comma separated list and assigns it to class Data Members - DESERIALIZE
@@ -91,7 +88,6 @@ class Contact {
         this.FullName = stringArray[0];
         this.ContactNumber = stringArray[1];
         this.EmailAddress = stringArray[2];
-        this.SubjectLine = stringArray[3];
         this.MessageText = stringArray[4];
     }
 }

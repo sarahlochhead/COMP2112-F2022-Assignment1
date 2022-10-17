@@ -66,16 +66,14 @@ class Contact
      * @param {string} [fullName="unknown name"]
      * @param {string} [contactNumber="no contact number"]
      * @param {string} [emailAddress="unknown email address"]
-     * @param {string} [subjectLine="no subject"]
      * @param {string} [messageText="no message"]
      * @memberof Contact
      */
-    constructor(fullName: string = "unknown name", contactNumber: string = "no contact number", emailAddress: string = "unknown email address", subjectLine: string = "no subject", messageText: string = "no message")
+    constructor(fullName: string = "unknown name", contactNumber: string = "no contact number", emailAddress: string = "unknown email address",  messageText: string = "no message")
     {
         this.FullName = fullName;
         this.ContactNumber = contactNumber;
         this.EmailAddress = emailAddress;
-        this.SubjectLine = subjectLine;
         this.messageText = messageText;
     }
 
@@ -91,7 +89,6 @@ class Contact
     {
         let outputString = "";
         outputString += `Message From: ${this.FullName}\n`;
-        outputString += `Subject: ${this.SubjectLine}\n`;
         outputString += `Email Address: ${this.EmailAddress}\n`;
         outputString += `Contact Number: ${this.ContactNumber}\n`;
         outputString += `Message: ${this.MessageText}`;
@@ -106,7 +103,7 @@ class Contact
      */
     public toJSON(): string
     {
-        return `${this.FullName},${this.ContactNumber},${this.EmailAddress},${this.SubjectLine},${this.MessageText}`;
+        return `${this.FullName},${this.ContactNumber},${this.EmailAddress},${this.MessageText}`;
     }
 
     /**
@@ -121,7 +118,6 @@ class Contact
         this.FullName = stringArray[0];
         this.ContactNumber = stringArray[1];
         this.EmailAddress = stringArray[2];
-        this.SubjectLine = stringArray[3];
         this.MessageText = stringArray[4];
 
     }

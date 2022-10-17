@@ -52,7 +52,7 @@
             $("header").html(html_data);
 
             // This is the string variable for the bio 
-            let aboutBio = "Testing this to see if it works"
+            let aboutBio = "Hello! Sarah here. I'm a creative problem-solver committed to relationship building, community engagement and education. I'm currently pursuing a diploma from Georgian College in the Interactive Media Design Web program. I have knowledge in a variety of coding languages and research-driven understanding of the benefits of digital literacy. I have over a decade of experience designing and implementing educational programs in public and private sector organizations. I also have teaching experience for learners aged preschool to adult including certifications in program design for children and youth. I'm a seasoned not-for-profit administrator with a demonstrated history of working in the performing arts industry with a BFA and a Master of Arts (MA) focused in Dance from York University. In addition to my current studies at Georgian College, I've successfully completed coding and digital marketing programs at Juno College (formerly HackerYou), Lighthouse Labs, and Camp Tech."
             
            switch(document.title)
            {
